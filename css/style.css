@@ -54,7 +54,30 @@ li:hover a {
 END OF NAVBAR
 */
 
+/* CSS */
 
+/* Style the navigation menu */
+.all-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation links */
+.all-navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.5s ease; /* Add this line */
+}
+
+.all-navbar li a:hover {
+    background-color: #111;
+}
 
 
 
@@ -105,7 +128,7 @@ span {
 }
 
 .name {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 125px;
     letter-spacing: .4rem;
 }
@@ -776,6 +799,7 @@ Card 5
 footer {
     
     height: 150px;
+   
     color: #f1f1f1;
     background: #30343F;
     text-align: center;
@@ -789,8 +813,6 @@ footer ul {
     list-style: none;
 }
 
-
-
 .social-menu a {
     font-size: 50px;
     padding: 0 40px 0 40px;
@@ -799,6 +821,96 @@ footer ul {
 
 
 
-.social-menu a:hover {
-    border-bottom: none;
+
+
+@media screen and (max-width: 600px) {
+    .all-navbar ul li {
+        width: 100%;
+    }
+    .container-1,
+    .container-2,
+    .container-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .flip-card,
+    .flip-card-2,
+    .flip-card-3,
+    .flip-card-4,
+    .flip-card-5 {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .thanks {
+        margin-top: 100px;
+    }
+    .thanks h2 {
+        width: 80%;
+    }
+    .visit {
+        flex-direction: column;
+        align-items: center;
+    }
+    .visit p {
+        width: 100%;
+        text-align: center;
+    }
+    footer ul {
+        flex-direction: column;
+    }
+    .social-menu a {
+        font-size: 30px;
+        padding: 0 20px 0 20px;
+    }
 }
+@media screen and (max-width: 600px) {
+    .all-navbar ul li {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Your CSS code for screen sizes below 500px goes here */
+    @media screen and (max-width: 500px) {
+        .name {
+            letter-spacing: 0.2rem;
+            font-size: 24px;
+        }
+    }
+    /* For example: */
+    .container-1,
+    .container-2,
+    .container-3 {
+        justify-content: center;
+    }
+    .flip-card,
+    .flip-card-2,
+    .flip-card-3,
+    .flip-card-4,
+    .flip-card-5 {
+        margin-top: 20px;
+    }
+    .thanks {
+        margin-top: 100px;
+    }
+    .thanks h2 {
+        width: 80%;
+    }
+    .visit {
+        align-items: center;
+    }
+    .visit p {
+        text-align: center;
+    }
+    footer ul {
+        flex-direction: row; /* Change from column to row */
+    }
+    .social-menu a {
+        padding: 0 20px 0 20px;
+    }
+    .content1 {
+        margin-top: 100px; /* Add this line to push the section down */
+    }
+}
+
