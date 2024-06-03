@@ -12,9 +12,7 @@ body {
     font-size: 22px;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 
 button {
@@ -49,12 +47,12 @@ button a {
 
 
 
-.cssanimation, .cssanimation span {
+.css animation, .css animation span {
     animation-duration: 1s;
     animation-fill-mode: both;
 }
 
-.cssanimation span { display: inline-block }
+.css animation span { display: inline-block }
 
 .elevateRight { animation-name: elevateRight }
 @keyframes elevateRight {
@@ -103,6 +101,23 @@ span {
 .form-1 {
     margin-top: 105px;
 }
+
+.submit-contact {
+    background: #30343F;
+    margin-top: 20px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    color: #f7f7ff;
+    text-decoration: none;
+}
+
+.submit-contact:hover {
+    color: #c2e812;
+    transition: ease-in-out .5s;
+    border-bottom: solid 1px #ee2677;
+}
+
 
 
 input {
